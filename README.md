@@ -3,7 +3,9 @@
 ## Setup
 
 Build an image for the build-environment:
- `$ docker build buildenv -t x64-os`
+ ```
+ $ docker build buildenv -t x64-os
+ ```
  (If you're having issues with apt, run the above command with `--network host`)
 
 ## Build
