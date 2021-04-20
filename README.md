@@ -1,5 +1,7 @@
 # My 64-bit OS!
 
+#### 🔴 This code is not all written by me. Most of it was written following [this](https://www.youtube.com/playlist?list=PLZQftyCk7_SeZRitx5MjBKzTtvk0pHMtp) tutorial by CodePulse on Youtube, as well as following the [OSdev wiki](https://wiki.osdev.org/)
+
 ## Setup
 
 Build an image for the build-environment: `docker build buildenv -t x64-os`
