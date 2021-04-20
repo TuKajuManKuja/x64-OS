@@ -3,10 +3,16 @@
 #include <stdint.h>
 #include <stddef.h>
 
+const static size_t NUM_COLS = 80;
+const static size_t NUM_ROWS = 25;
+
 void print_clear();
 void print_char(char c);
 void print_str(char* s);
 void print_set_color(uint8_t fg, uint8_t bg);
+void print(uint8_t fg, uint8_t bg, char* s);
+// size_t getNumCols() { return NUM_COLS; }
+// size_t getNumRows() { return NUM_ROWS; }
 
 enum {
     PRINT_COLOR_BLACK = 0,

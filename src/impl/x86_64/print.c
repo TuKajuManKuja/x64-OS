@@ -1,7 +1,5 @@
 #include "print.h"
-
-const static size_t NUM_COLS = 80;
-const static size_t NUM_ROWS = 25;
+#include "cursor.h"
 
 struct Char
 {
@@ -81,4 +79,9 @@ void print_str (char* s) {
 
 void print_set_color (uint8_t fg, uint8_t bg) {
     color = fg + (bg << 4);
+}
+
+void print (uint8_t fg, uint8_t bg, char* s) {
+    print_set_color(fg, bg);
+    print_str(s);
 }
